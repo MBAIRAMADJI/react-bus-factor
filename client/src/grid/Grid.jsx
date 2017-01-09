@@ -8,14 +8,13 @@ class Grid extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {names : ['football', 'basketball', 'hockey', 'tennis', 'surf', 'ski', 'natation', 'badmington', 'equitation', 'petanque', 'bobsleigh', 'aviron']}
+    this.state = {names : ['Aviron','Badmington','Basketball','Bobsleigh', 'Equitation','Football', 'Hockey', 'Natation', 'Petanque', 'Surf', 'Ski','Tennis']}
   }
 
   // Le HTML qui sera incorporé à chaque fois que <Grid /> est appelé
   render () {
     return (
       <div>
-        <div className="divider"></div>
         <div className="row">
           {
             this.state.names.map((n)=> {
